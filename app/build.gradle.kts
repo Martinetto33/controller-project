@@ -22,11 +22,14 @@ dependencies {
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:31.1-jre")
+    
+    // Jinput
+    implementation("net.java.jinput:jinput:2.0.9")
 }
 
 application {
     // Define the main class for the application.
-    mainClass.set("controller.project.App")
+    mainClass.set("App")
 }
 
 tasks.named<Test>("test") {
